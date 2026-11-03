@@ -8,7 +8,7 @@ type PageHeroProps = {
 
 export default function PageHero({ title, subtitle, crumb }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-brown-800 text-white">
+    <section className="relative overflow-hidden bg-maroon-800 text-white">
       <div
         className="absolute inset-0 opacity-20"
         style={{

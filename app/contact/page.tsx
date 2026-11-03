@@ -40,9 +40,9 @@ export default function ContactPage() {
               <Reveal key={c.title} delay={i * 80}>
                 <div className="h-full rounded-3xl border border-brown-100 bg-white p-6 text-center shadow-sm">
                   <div className="mb-3 text-3xl">{c.icon}</div>
-                  <h3 className="font-display text-lg font-bold text-brown-800">{c.title}</h3>
+                  <h3 className="font-display text-lg font-bold text-maroon-800">{c.title}</h3>
                   {c.href ? (
-                    <a href={c.href} className="mt-1 block text-sm text-brown-700 hover:text-brown-900">
+                    <a href={c.href} className="mt-1 block text-sm text-brown-700 hover:text-maroon-800">
                       {c.body}
                     </a>
                   ) : (
@@ -55,11 +55,11 @@ export default function ContactPage() {
 
           <div className="mt-16 grid items-start gap-10 lg:grid-cols-2">
             <Reveal>
-              <h2 className="mb-6 font-display text-3xl font-bold text-brown-800">Send us a message</h2>
+              <h2 className="mb-6 font-display text-3xl font-bold text-maroon-800">Send us a message</h2>
               <EnquiryForm />
             </Reveal>
             <Reveal delay={100}>
-              <h2 className="mb-6 font-display text-3xl font-bold text-brown-800">Find us</h2>
+              <h2 className="mb-6 font-display text-3xl font-bold text-maroon-800">Find us</h2>
               <div className="overflow-hidden rounded-3xl border border-brown-100 shadow-sm">
                 <iframe
                   title={`Map showing ${siteConfig.name} in Kumasi, Ghana`}

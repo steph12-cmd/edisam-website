@@ -11,7 +11,7 @@ export const siteConfig = {
   phone: "+233 55 650 1264", // TODO
   phoneHref: "tel:+233 55 650 1264", // TODO
   email: "info@edisamschool.com", // TODO
-  whatsapp: "+233 55 650 1264", // TODO: international format, no + or spaces
+  whatsapp: "+233556501264", // TODO: international format, no + or spaces
   address: "P.O. Box KJ 221 Kumasi", // TODO: add street / area
   hours: [
     { days: "Monday – Friday", time: "7:00 AM – 5:00 PM" },

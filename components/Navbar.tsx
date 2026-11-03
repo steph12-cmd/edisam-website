@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -27,7 +28,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       {/* Top info bar */}
-      <div className="hidden bg-brown-800 text-cream-100 md:block">
+      <div className="hidden bg-maroon-800 text-cream-100 md:block">
         <div className="container-x flex items-center justify-between py-2 text-xs">
           <div className="flex items-center gap-6">
             <a href={siteConfig.phoneHref} className="hover:text-white">
@@ -50,16 +51,20 @@ export default function Navbar() {
       >
         <div className="container-x flex h-20 items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            {/* Replace this circle with your logo: <Image src="/logo.png" ... /> */}
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-brown-700 font-display text-2xl font-bold text-cream-100">
-              E
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt={`${siteConfig.name} crest`}
+              width={410}
+              height={430}
+              priority
+              className="h-14 w-auto"
+            />
             <span className="leading-tight">
-              <span className="block font-display text-xl font-bold text-brown-800">
+              <span className="block font-display text-xl font-bold text-maroon-800">
                 {siteConfig.name}
               </span>
               <span className="block text-[11px] uppercase tracking-widest text-brown-500">
-                P.O.Box KJ 221 Kumasi Ghana.
+                Kumasi · Ghana
               </span>
             </span>
           </Link>
@@ -72,7 +77,7 @@ export default function Navbar() {
                   href={link.href}
                   className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
                     isActive(link.href)
-                      ? "bg-cream-200 text-brown-800"
+                      ? "bg-cream-200 text-maroon-800"
                       : "text-brown-700 hover:bg-cream-100"
                   }`}
                 >
@@ -92,7 +97,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-brown-800 hover:bg-cream-100 lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-lg text-maroon-800 hover:bg-cream-100 lg:hidden"
             aria-label="Toggle menu"
             aria-expanded={open}
             aria-controls="mobile-menu"
@@ -122,7 +127,7 @@ export default function Navbar() {
                     href={link.href}
                     className={`block rounded-xl px-4 py-3 text-base font-semibold ${
                       isActive(link.href)
-                        ? "bg-cream-200 text-brown-800"
+                        ? "bg-cream-200 text-maroon-800"
                         : "text-brown-700 hover:bg-cream-100"
                     }`}
                   >

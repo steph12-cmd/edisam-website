@@ -23,7 +23,7 @@ export default function GalleryGrid() {
             onClick={() => setActive(c)}
             className={`rounded-full px-5 py-2 text-sm font-semibold transition ${
               active === c
-                ? "bg-brown-700 text-white"
+                ? "bg-maroon-700 text-white"
                 : "bg-white text-brown-700 hover:bg-cream-200"
             }`}
           >

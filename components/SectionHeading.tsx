@@ -26,7 +26,7 @@ export default function SectionHeading({
       )}
       <h2
         className={`font-display text-3xl font-bold sm:text-4xl ${
-          light ? "text-white" : "text-brown-800"
+          light ? "text-white" : "text-maroon-800"
         }`}
       >
         {title}

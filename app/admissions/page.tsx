@@ -27,10 +27,10 @@ export default function AdmissionsPage() {
             {admissionSteps.map((s, i) => (
               <Reveal key={s.title} delay={i * 80}>
                 <li className="h-full list-none rounded-3xl border border-brown-100 bg-white p-6 text-center shadow-sm">
-                  <span className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-brown-700 font-display text-xl font-bold text-white">
+                  <span className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-maroon-700 font-display text-xl font-bold text-white">
                     {i + 1}
                   </span>
-                  <h3 className="font-display text-xl font-bold text-brown-800">{s.title}</h3>
+                  <h3 className="font-display text-xl font-bold text-maroon-800">{s.title}</h3>
                   <p className="mt-2 text-sm text-brown-700">{s.text}</p>
                 </li>
               </Reveal>
@@ -44,11 +44,11 @@ export default function AdmissionsPage() {
         <div className="container-x grid gap-10 lg:grid-cols-2">
           <Reveal>
             <div className="h-full rounded-3xl bg-white p-8 shadow-sm">
-              <h2 className="font-display text-2xl font-bold text-brown-800">Documents required</h2>
+              <h2 className="font-display text-2xl font-bold text-maroon-800">Documents required</h2>
               <ul className="mt-5 space-y-3">
                 {documentsRequired.map((d) => (
                   <li key={d} className="flex items-start gap-3 text-brown-700">
-                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brown-700 text-[11px] text-white">
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-maroon-700 text-[11px] text-white">
                       ✓
                     </span>
                     {d}
@@ -60,7 +60,7 @@ export default function AdmissionsPage() {
 
           <Reveal delay={100}>
             <div className="h-full rounded-3xl bg-white p-8 shadow-sm">
-              <h2 className="font-display text-2xl font-bold text-brown-800">School fees</h2>
+              <h2 className="font-display text-2xl font-bold text-maroon-800">School fees</h2>
               <div className="mt-5 overflow-x-auto">
                 <table className="w-full min-w-[420px] text-left text-sm">
                   <thead>
@@ -70,7 +70,7 @@ export default function AdmissionsPage() {
                       <th className="py-2 font-semibold">Per term</th>
                     </tr>
                   </thead>
-                  <tbody className="text-brown-800">
+                  <tbody className="text-maroon-800">
                     {fees.map((f) => (
                       <tr key={f.level} className="border-b border-brown-100/60 last:border-0">
                         <td className="py-3 pr-4 font-semibold">{f.level}</td>
@@ -100,7 +100,7 @@ export default function AdmissionsPage() {
                   key={f.q}
                   className="group rounded-2xl border border-brown-100 bg-white p-5 open:shadow-sm"
                 >
-                  <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-brown-800">
+                  <summary className="flex cursor-pointer list-none items-center justify-between font-semibold text-maroon-800">
                     {f.q}
                     <span className="ml-4 text-xl text-brown-500 transition group-open:rotate-45">+</span>
                   </summary>

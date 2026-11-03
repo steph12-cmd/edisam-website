@@ -83,10 +83,10 @@ export default function AcademicsPage() {
               <Reveal key={p.title} delay={i * 100}>
                 <article className="h-full rounded-3xl border border-brown-100 bg-white p-7 shadow-sm">
                   <div className="text-4xl">{p.icon}</div>
-                  <h3 className="mt-3 font-display text-2xl font-bold text-brown-800">{p.title}</h3>
+                  <h3 className="mt-3 font-display text-2xl font-bold text-maroon-800">{p.title}</h3>
                   <p className="text-xs font-bold uppercase tracking-widest text-brown-500">{p.ages}</p>
                   <p className="mt-3 text-sm leading-relaxed text-brown-700">{p.blurb}</p>
-                  <h4 className="mb-2 mt-5 text-sm font-bold text-brown-800">Subjects</h4>
+                  <h4 className="mb-2 mt-5 text-sm font-bold text-maroon-800">Subjects</h4>
                   <ul className="space-y-1.5 text-sm text-brown-700">
                     {subjects[p.title as keyof typeof subjects]?.map((s) => (
                       <li key={s} className="flex items-center gap-2">
@@ -120,7 +120,7 @@ export default function AcademicsPage() {
             <SectionHeading align="left" eyebrow="Clubs & Activities" title="Activities children love" />
             <div className="-mt-6 flex flex-wrap gap-3">
               {activities.map((a) => (
-                <span key={a} className="rounded-full bg-cream-200 px-5 py-2 text-sm font-semibold text-brown-800">
+                <span key={a} className="rounded-full bg-cream-200 px-5 py-2 text-sm font-semibold text-maroon-800">
                   {a}
                 </span>
               ))}

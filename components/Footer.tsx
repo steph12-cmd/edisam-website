@@ -1,15 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 import { navLinks, programmes, siteConfig } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="bg-brown-900 text-cream-200">
+    <footer className="bg-maroon-900 text-cream-200">
       <div className="container-x grid gap-10 py-16 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="mb-4 flex items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full bg-cream-100 font-display text-xl font-bold text-brown-800">
-              E
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt={`${siteConfig.name} crest`}
+              width={410}
+              height={430}
+              className="h-16 w-auto"
+            />
             <span className="font-display text-xl font-bold text-white">
               {siteConfig.name}
             </span>
@@ -24,7 +29,7 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full border border-brown-700 px-3 py-1 text-xs text-cream-200 transition hover:bg-cream-100 hover:text-brown-800"
+                className="rounded-full border border-maroon-700 px-3 py-1 text-xs text-cream-200 transition hover:bg-cream-100 hover:text-maroon-800"
               >
                 {s.label}
               </a>
@@ -92,7 +97,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-brown-800">
+      <div className="border-t border-maroon-800">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-cream-300 sm:flex-row">
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.

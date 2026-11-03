@@ -34,7 +34,7 @@ export default function NewsPage() {
                       {formatDate(n.date)}
                     </time>
                   </div>
-                  <h2 className="font-display text-xl font-bold text-brown-800">{n.title}</h2>
+                  <h2 className="font-display text-xl font-bold text-maroon-800">{n.title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-brown-700">{n.excerpt}</p>
                 </div>
               </article>

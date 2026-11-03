@@ -29,7 +29,7 @@ export default function HomePage() {
             <p className="mb-4 inline-block rounded-full bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-brown-600 shadow-sm">
               Nursery &amp; Primary School · Kumasi
             </p>
-            <h1 className="font-display text-4xl font-bold leading-tight text-brown-800 sm:text-5xl lg:text-6xl">
+            <h1 className="font-display text-4xl font-bold leading-tight text-maroon-800 sm:text-5xl lg:text-6xl">
               {siteConfig.name}
               <span className="mt-2 block text-brown-500">{siteConfig.tagline}.</span>
             </h1>
@@ -53,7 +53,7 @@ export default function HomePage() {
               className="aspect-[4/3] w-full rounded-[2rem] shadow-xl"
             />
             <div className="absolute -bottom-6 left-4 rounded-2xl bg-white px-5 py-4 shadow-lg sm:-left-6">
-              <p className="font-display text-2xl font-bold text-brown-700">Nursery – P6</p>
+              <p className="font-display text-2xl font-bold text-maroon-700">Nursery – JHS 1</p>
               <p className="text-xs uppercase tracking-widest text-brown-500">Admissions open</p>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
         <div className="container-x grid grid-cols-2 gap-6 py-8 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-display text-2xl font-bold text-brown-700">{s.value}</p>
+              <p className="font-display text-2xl font-bold text-maroon-700">{s.value}</p>
               <p className="text-sm text-brown-600">{s.label}</p>
             </div>
           ))}
@@ -93,14 +93,14 @@ export default function HomePage() {
               academic results. We nurture confident, creative and responsible
               children with the knowledge, skills and values to succeed.
             </p>
-            <h3 className="mb-3 font-display text-xl font-semibold text-brown-800">
+            <h3 className="mb-3 font-display text-xl font-semibold text-maroon-800">
               Beyond the classroom
             </h3>
             <ul className="mb-8 space-y-2 text-brown-700">
               {["Sports and physical development", "Technology and innovation", "Performing arts and music"].map(
                 (t) => (
                   <li key={t} className="flex items-center gap-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brown-700 text-xs text-white">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-maroon-700 text-xs text-white">
                       ✓
                     </span>
                     {t}
@@ -132,13 +132,13 @@ export default function HomePage() {
                     <p className="text-xs font-bold uppercase tracking-widest text-brown-500">
                       {p.ages}
                     </p>
-                    <h3 className="mt-1 font-display text-2xl font-bold text-brown-800">
+                    <h3 className="mt-1 font-display text-2xl font-bold text-maroon-800">
                       {p.icon} {p.title}
                     </h3>
                     <p className="mt-3 flex-1 text-sm leading-relaxed text-brown-700">{p.blurb}</p>
                     <Link
                       href="/academics"
-                      className="mt-5 text-sm font-bold text-brown-700 hover:text-brown-900"
+                      className="mt-5 text-sm font-bold text-brown-700 hover:text-maroon-800"
                     >
                       Explore →
                     </Link>
@@ -165,7 +165,7 @@ export default function HomePage() {
                   <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white text-3xl shadow-sm">
                     {v.icon}
                   </div>
-                  <h3 className="font-display text-xl font-bold text-brown-800">{v.title}</h3>
+                  <h3 className="font-display text-xl font-bold text-maroon-800">{v.title}</h3>
                   <p className="mt-2 text-sm text-brown-700">{v.text}</p>
                 </div>
               </Reveal>
@@ -175,7 +175,7 @@ export default function HomePage() {
       </section>
 
       {/* ACTIVITIES MARQUEE */}
-      <section className="overflow-hidden bg-brown-800 py-6" aria-label="School activities">
+      <section className="overflow-hidden bg-maroon-800 py-6" aria-label="School activities">
         <div className="flex w-max animate-marquee gap-10 whitespace-nowrap">
           {marquee.map((a, i) => (
             <span key={`${a}-${i}`} className="font-display text-2xl text-cream-200">
@@ -222,7 +222,7 @@ export default function HomePage() {
                       {formatDate(n.date)}
                     </time>
                   </div>
-                  <h3 className="font-display text-xl font-bold text-brown-800">{n.title}</h3>
+                  <h3 className="font-display text-xl font-bold text-maroon-800">{n.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-brown-700">{n.excerpt}</p>
                 </article>
               </Reveal>
@@ -247,8 +247,8 @@ export default function HomePage() {
               text="Send us a message and our team will respond as quickly as possible. You can also call or visit the school during opening hours."
             />
             <ul className="space-y-3 text-brown-700">
-              <li>📞 <a href={siteConfig.phoneHref} className="font-semibold hover:text-brown-900">{siteConfig.phone}</a></li>
-              <li>✉️ <a href={`mailto:${siteConfig.email}`} className="font-semibold hover:text-brown-900">{siteConfig.email}</a></li>
+              <li>📞 <a href={siteConfig.phoneHref} className="font-semibold hover:text-maroon-800">{siteConfig.phone}</a></li>
+              <li>✉️ <a href={`mailto:${siteConfig.email}`} className="font-semibold hover:text-maroon-800">{siteConfig.email}</a></li>
               <li>📍 {siteConfig.address}</li>
             </ul>
           </Reveal>

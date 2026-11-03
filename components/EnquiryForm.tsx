@@ -64,13 +64,13 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor="parentName" className="mb-1 block text-sm font-semibold text-brown-800">
+          <label htmlFor="parentName" className="mb-1 block text-sm font-semibold text-maroon-800">
             Parent / Guardian name *
           </label>
           <input id="parentName" name="parentName" required minLength={2} className="input" placeholder="Full name" />
         </div>
         <div>
-          <label htmlFor="phone" className="mb-1 block text-sm font-semibold text-brown-800">
+          <label htmlFor="phone" className="mb-1 block text-sm font-semibold text-maroon-800">
             Phone number *
           </label>
           <input id="phone" name="phone" type="tel" required minLength={9} className="input" placeholder="024 000 0000" />
@@ -79,13 +79,13 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
 
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
-          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-brown-800">
+          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-maroon-800">
             Email
           </label>
           <input id="email" name="email" type="email" className="input" placeholder="you@example.com" />
         </div>
         <div>
-          <label htmlFor="childName" className="mb-1 block text-sm font-semibold text-brown-800">
+          <label htmlFor="childName" className="mb-1 block text-sm font-semibold text-maroon-800">
             Child&apos;s name
           </label>
           <input id="childName" name="childName" className="input" placeholder="Child's full name" />
@@ -94,7 +94,7 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
 
       {!compact && (
         <div>
-          <label htmlFor="classApplying" className="mb-1 block text-sm font-semibold text-brown-800">
+          <label htmlFor="classApplying" className="mb-1 block text-sm font-semibold text-maroon-800">
             Class applying for
           </label>
           <select id="classApplying" name="classApplying" className="input" defaultValue="">
@@ -111,7 +111,7 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
       )}
 
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm font-semibold text-brown-800">
+        <label htmlFor="message" className="mb-1 block text-sm font-semibold text-maroon-800">
           Message *
         </label>
         <textarea

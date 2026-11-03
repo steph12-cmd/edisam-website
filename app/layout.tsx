@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
-// @ts-ignore Next.js processes global CSS imports at build time.
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -37,17 +36,19 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | Kumasi, Ghana`,
     description: siteConfig.description,
+    images: [{ url: "/images/logo.png", width: 410, height: 430, alt: `${siteConfig.name} crest` }],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: `${siteConfig.name} | Kumasi, Ghana`,
     description: siteConfig.description,
+    images: ["/images/logo.png"],
   },
   robots: { index: true, follow: true },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6B4423",
+  themeColor: "#5A2323",
   width: "device-width",
   initialScale: 1,
 };
@@ -58,6 +59,7 @@ const jsonLd = {
   name: siteConfig.name,
   description: siteConfig.description,
   url: siteConfig.url,
+  logo: `${siteConfig.url}/images/logo.png`,
   telephone: siteConfig.phone,
   email: siteConfig.email,
   address: {
@@ -74,8 +76,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={poppins.variable}>
-      <body className="font-sans">
+    <html lang="en" className={poppins.variable} suppressHydrationWarning>
+      <body className="font-sans" suppressHydrationWarning>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

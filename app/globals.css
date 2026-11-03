@@ -6,6 +6,22 @@
   --color-cream-200: #f3ead6;
   --color-cream-300: #e8d9ba;
 
+  /* Primary: maroon (from the school crest) */
+  --color-maroon-50: #fbf3f3;
+  --color-maroon-100: #f4e1e1;
+  --color-maroon-200: #e6bcbc;
+  --color-maroon-500: #8f3b3b;
+  --color-maroon-600: #742c2c;
+  --color-maroon-700: #5a2323;
+  --color-maroon-800: #471a1a;
+  --color-maroon-900: #2f1010;
+
+  /* Primary: red (crest ribbon), used for buttons and key actions */
+  --color-red-500: #c62222;
+  --color-red-600: #b01818;
+  --color-red-700: #921212;
+
+  /* Accent: brown */
   --color-brown-100: #e9dccb;
   --color-brown-300: #c9a27a;
   --color-brown-500: #a06b3f;
@@ -45,13 +61,13 @@ body {
     @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
   }
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-full bg-brown-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brown-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-brown-500 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-full bg-red-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-red-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center rounded-full border-2 border-brown-700 px-6 py-3 text-sm font-semibold text-brown-700 transition hover:bg-brown-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-brown-500 focus-visible:ring-offset-2;
+    @apply inline-flex items-center justify-center rounded-full border-2 border-maroon-700 px-6 py-3 text-sm font-semibold text-maroon-700 transition hover:bg-maroon-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2;
   }
   .input {
-    @apply w-full rounded-xl border border-brown-100 bg-white px-4 py-3 text-sm text-brown-900 placeholder:text-brown-300 focus:border-brown-500 focus:outline-none focus:ring-2 focus:ring-brown-500/30;
+    @apply w-full rounded-xl border border-brown-100 bg-white px-4 py-3 text-sm text-brown-900 placeholder:text-brown-300 focus:border-maroon-500 focus:outline-none focus:ring-2 focus:ring-maroon-500/30;
   }
 }
 
