@@ -11,7 +11,8 @@ export const metadata: Metadata = {
 
 // Tip: for an exact pin, open your school on Google Maps > Share > Embed a map,
 // and paste that iframe src into MAP_SRC below.
-const MAP_SRC = "https://www.google.com/maps?q=Kumasi,+Ghana&output=embed";
+const MAP_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1751.3515370219152!2d-1.6609686865286661!3d6.769613195615278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdbbd006feaece1%3A0xac2c9ad01ccf2f6d!2sEdisam%20Educational%20Complex%2C%20Hemang-Botantia!5e0!3m2!1sen!2sng!4v1793802473309!5m2!1sen!2sng";
 
 export default function ContactPage() {
   const cards = [

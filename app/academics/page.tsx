@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
-import Placeholder from "@/components/Placeholder";
+import { photos } from "@/lib/images";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import CtaBand from "@/components/CtaBand";
@@ -69,7 +70,15 @@ export default function AcademicsPage() {
             </p>
           </Reveal>
           <Reveal delay={100}>
-            <Placeholder label="Pupils learning" className="aspect-[4/3] w-full rounded-3xl shadow-lg" />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-lg">
+              <Image
+                src={photos.boysRedKits.src}
+                alt="A line of Edisam pupils in red PE kits lined up against a pink wall"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </Reveal>
         </div>
       </section>

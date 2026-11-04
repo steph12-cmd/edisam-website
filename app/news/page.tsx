@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
-import Placeholder from "@/components/Placeholder";
 import Reveal from "@/components/Reveal";
 import { formatDate, news, siteConfig } from "@/lib/site";
 
@@ -24,7 +24,16 @@ export default function NewsPage() {
           {sorted.map((n, i) => (
             <Reveal key={n.slug} delay={(i % 3) * 100}>
               <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-brown-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                <Placeholder label={n.category} className="aspect-[16/10] w-full" />
+                <div className="relative aspect-[16/10] w-full overflow-hidden">
+                  <Image
+                    src={n.photo.src}
+                    alt={n.alt}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
+                    style={{ objectPosition: "50% 35%" }}
+                  />
+                </div>
                 <div className="flex flex-1 flex-col p-6">
                   <div className="mb-3 flex items-center justify-between text-xs">
                     <span className="rounded-full bg-cream-200 px-3 py-1 font-bold text-brown-700">

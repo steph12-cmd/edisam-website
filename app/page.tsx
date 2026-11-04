@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import Placeholder from "@/components/Placeholder";
+import { photos } from "@/lib/images";
 import SectionHeading from "@/components/SectionHeading";
 import CtaBand from "@/components/CtaBand";
 import EnquiryForm from "@/components/EnquiryForm";
@@ -34,7 +35,7 @@ export default function HomePage() {
               <span className="mt-2 block text-brown-500">{siteConfig.tagline}.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-brown-700">
-              A warm, safe and inspiring place where children aged 2 to 11 learn,
+              A warm, safe and inspiring place where children aged 2 to 15 learn,
               play and grow into confident, caring and curious young people.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
@@ -48,10 +49,16 @@ export default function HomePage() {
           </div>
 
           <div className="relative">
-            <Placeholder
-              label="Hero photo: pupils in class"
-              className="aspect-[4/3] w-full rounded-[2rem] shadow-xl"
-            />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] shadow-xl">
+              <Image
+                src={photos.heroClass.src}
+                alt="Cheerful Edisam pupils in red PE kits posing together outside the school"
+                fill
+                priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
             <div className="absolute -bottom-6 left-4 rounded-2xl bg-white px-5 py-4 shadow-lg sm:-left-6">
               <p className="font-display text-2xl font-bold text-maroon-700">Nursery – JHS 1</p>
               <p className="text-xs uppercase tracking-widest text-brown-500">Admissions open</p>
@@ -77,8 +84,24 @@ export default function HomePage() {
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <div className="grid grid-cols-2 gap-4">
-              <Placeholder label="Classroom" className="aspect-[3/4] rounded-3xl" />
-              <Placeholder label="Playground" className="mt-10 aspect-[3/4] rounded-3xl" />
+              <div className="relative aspect-[3/4] overflow-hidden rounded-3xl">
+                <Image
+                  src={photos.pupilsFriends.src}
+                  alt="Two Edisam pupils in school uniform standing in front of the old buildings"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 45vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative mt-10 aspect-[3/4] overflow-hidden rounded-3xl">
+                <Image
+                  src={photos.pupilsOnJet.src}
+                  alt="Pupils in school uniform playing on a yellow and grey jet display"
+                  fill
+                  sizes="(min-width: 1024px) 25vw, 45vw"
+                  className="object-cover"
+                />
+              </div>
             </div>
           </Reveal>
           <Reveal delay={100}>
@@ -127,7 +150,16 @@ export default function HomePage() {
             {programmes.map((p, i) => (
               <Reveal key={p.title} delay={i * 100}>
                 <article className="flex h-full flex-col overflow-hidden rounded-3xl border border-brown-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-                  <Placeholder label={p.title} className="aspect-[16/10] w-full" />
+                  <div className="relative aspect-[16/10] w-full overflow-hidden">
+                    <Image
+                      src={p.photo.src}
+                      alt={p.alt}
+                      fill
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      className="object-cover"
+                      style={{ objectPosition: p.position }}
+                    />
+                  </div>
                   <div className="flex flex-1 flex-col p-6">
                     <p className="text-xs font-bold uppercase tracking-widest text-brown-500">
                       {p.ages}
@@ -195,7 +227,16 @@ export default function HomePage() {
           />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {galleryItems.slice(0, 8).map((g) => (
-              <Placeholder key={g.title} label={g.title} className="aspect-square rounded-2xl" />
+              <div key={g.title} className="relative aspect-square overflow-hidden rounded-2xl">
+                <Image
+                  src={g.photo.src}
+                  alt={g.alt}
+                  fill
+                  sizes="(min-width: 768px) 25vw, 50vw"
+                  className="object-cover"
+                  style={{ objectPosition: "50% 30%" }}
+                />
+              </div>
             ))}
           </div>
           <div className="mt-10 text-center">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import Placeholder from "@/components/Placeholder";
+import { photos } from "@/lib/images";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import CtaBand from "@/components/CtaBand";
@@ -44,7 +46,15 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal delay={100}>
-            <Placeholder label="School building / founders" className="aspect-[4/3] w-full rounded-3xl shadow-lg" />
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-lg">
+              <Image
+                src={photos.campusBuilding.src}
+                alt="The Edisam School building with the school bus parked outside"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+              />
+            </div>
           </Reveal>
         </div>
       </section>

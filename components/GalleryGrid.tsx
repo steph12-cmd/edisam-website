@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
-import Placeholder from "@/components/Placeholder";
 import { galleryCategories, galleryItems } from "@/lib/site";
 
 type Category = (typeof galleryCategories)[number];
@@ -13,7 +13,11 @@ export default function GalleryGrid() {
 
   return (
     <div>
-      <div className="mb-10 flex flex-wrap justify-center gap-2" role="tablist" aria-label="Gallery categories">
+      <div
+        className="mb-10 flex flex-wrap justify-center gap-2"
+        role="tablist"
+        aria-label="Gallery categories"
+      >
         {galleryCategories.map((c) => (
           <button
             key={c}
@@ -32,19 +36,20 @@ export default function GalleryGrid() {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
-        {items.map((item, i) => (
+      {/* Masonry: every photo keeps its own shape, nothing is cropped */}
+      <div className="columns-2 gap-4 md:columns-3 lg:columns-4">
+        {items.map((item) => (
           <figure
             key={item.title}
-            className={`group overflow-hidden rounded-2xl ${
-              i % 5 === 0 ? "md:row-span-2" : ""
-            }`}
+            className="group mb-4 break-inside-avoid overflow-hidden rounded-2xl bg-cream-200"
           >
-            <Placeholder
-              label={item.title}
-              className={`w-full transition duration-500 group-hover:scale-105 ${
-                i % 5 === 0 ? "h-full min-h-[16rem]" : "aspect-square"
-              }`}
+            <Image
+              src={item.photo.src}
+              alt={item.alt}
+              width={item.photo.width}
+              height={item.photo.height}
+              sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+              className="h-auto w-full transition duration-500 group-hover:scale-105"
             />
           </figure>
         ))}
