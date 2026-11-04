@@ -35,7 +35,7 @@ export default function HomePage() {
               <span className="mt-2 block text-brown-500">{siteConfig.tagline}.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-brown-700">
-              A warm, safe and inspiring place where children aged 2 to 15 learn,
+              A warm, safe and inspiring place where children aged 2 to 12 learn,
               play and grow into confident, caring and curious young people.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
