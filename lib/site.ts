@@ -6,11 +6,11 @@ import { photos, type Photo } from "./images";
 export const siteConfig = {
   name: "Edisam School",
   shortName: "Edisam",
-  tagline: "Where little minds begin to shine",
+  tagline: "In God We Trust",
   description:
     "Edisam School is an Educational Complex in Kumasi, Ghana, nurturing confident, curious and caring children.",
   url: "https://www.edisamschool.com", // TODO: replace with your real domain
-  phone: "+233 55 650 1264", // TODO
+  phone: "+233 55 650 1264" + ", " + "+233 24 375 6811", // TODO
   phoneHref: "tel:+233556501264", // TODO
   email: "info@edisamschool.com", // TODO
   whatsapp: "233556501264", // TODO: international format, no + or spaces
