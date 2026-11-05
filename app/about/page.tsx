@@ -67,9 +67,10 @@ export default function AboutPage() {
               <p className="text-4xl">🎯</p>
               <h3 className="mt-3 font-display text-2xl font-bold">Our Mission</h3>
               <p className="mt-3 leading-relaxed text-cream-200">
-                To provide quality, child-centred education in a safe and
-                nurturing setting that develops the mind, character and talents
-                of every pupil.
+                To provide a nurturing, God-centred foundation of quality basic education that develops the
+                intellect, character, and talents of every child, preparing them to become responsible, confident,
+                and service-oriented citizens of Ghana and the world - guided always by the truth that In God We
+                Trust.
               </p>
             </div>
           </Reveal>
@@ -78,9 +79,9 @@ export default function AboutPage() {
               <p className="text-4xl">🌟</p>
               <h3 className="mt-3 font-display text-2xl font-bold text-maroon-800">Our Vision</h3>
               <p className="mt-3 leading-relaxed text-brown-700">
-                To raise responsible, forward-thinking children who grow into
-                confident leaders and positive contributors to Ghana and the
-                world.
+                To be a leading basic school in Ghana where every learner discovers their God-given potential,
+                grows in knowledge, faith, and integrity, and rises as a beacon of excellence, discipline, and
+                national pride.
               </p>
             </div>
           </Reveal>
