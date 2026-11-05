@@ -123,7 +123,7 @@ export default function AcademicsPage() {
                 </li>
               ))}
             </ol>
-            <p className="mt-4 text-xs text-brown-500">Sample timetable. Update with your real school hours.</p>
+            {/* <p className="mt-4 text-xs text-brown-500">Sample timetable. Update with your real school hours.</p> */}
           </Reveal>
           <Reveal delay={100}>
             <SectionHeading align="left" eyebrow="Clubs & Activities" title="Activities children love" />

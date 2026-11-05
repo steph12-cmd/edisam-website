@@ -28,7 +28,7 @@ export default function HomePage() {
         <div className="container-x relative grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
           <div>
             <p className="mb-4 inline-block rounded-full bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-brown-600 shadow-sm">
-              Nursery &amp; Primary School · Kumasi
+              Educational Complex · Kumasi
             </p>
             <h1 className="font-display text-4xl font-bold leading-tight text-maroon-800 sm:text-5xl lg:text-6xl">
               {siteConfig.name}

@@ -102,7 +102,7 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <p>Kumasi, Ghana</p>
+          <p>In God We Trust</p>
         </div>
       </div>
     </footer>

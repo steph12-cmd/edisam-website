@@ -22,7 +22,7 @@ export const siteConfig = {
   socials: [
     { label: "Facebook", href: "https://facebook.com/" },
     { label: "Instagram", href: "https://instagram.com/" },
-    { label: "YouTube", href: "https://youtube.com/" },
+    { label: "Tiktok", href: "https://tiktok.com/" },
   ],
 };
 

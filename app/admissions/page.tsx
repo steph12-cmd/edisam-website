@@ -81,9 +81,7 @@ export default function AdmissionsPage() {
                   </tbody>
                 </table>
               </div>
-              <p className="mt-4 text-xs text-brown-500">
-                Fees shown are placeholders. Contact the school office for the current fee schedule.
-              </p>
+                
             </div>
           </Reveal>
         </div>
