@@ -50,7 +50,7 @@ export const programmes = [
   },
   {
     title: "Lower Primary",
-    ages: "Primary 1 – 3 · Ages 6 – 8",
+    ages: "Basic 1 – 3 · Ages 6 – 8",
     icon: "📚",
     blurb:
       "Strong foundations in literacy and numeracy, taught through stories, hands-on activities and encouraging teachers.",
@@ -61,7 +61,7 @@ export const programmes = [
   },
   {
     title: "Upper Primary, JHS 1",
-    ages: "Primary 4 – 6, JHS 1 · Ages 9 – 12",
+    ages: "Basic 4 – 6, JHS 1 · Ages 9 – 12",
     icon: "🔬",
     blurb:
       "Deeper thinking, science and ICT skills, and leadership opportunities that prepare pupils for junior high school.",
@@ -188,8 +188,9 @@ export const documentsRequired = [
 export const fees = [
   { level: "Nursery", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
   { level: "Kindergarten", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
-  { level: "Primary 1 – 3", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
-  { level: "Primary 4 – 6", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
+  { level: "Basic 1 – 3", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
+  { level: "Basic 4 – 6", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
+   { level: "JHS 1", admission: "GH₵ X,XXX", term: "GH₵ X,XXX" },
 ];
 
 export const faqs = [

@@ -28,13 +28,14 @@ const subjects = {
     "Creative Arts",
     "Physical Education",
   ],
-  "Upper Primary": [
+  "Upper Primary, JHS 1": [
     "English Language",
     "Mathematics",
     "Science",
-    "Computing (ICT)",
+    "Social Studies",
     "Religious & Moral Education",
     "History of Ghana",
+    "Creative Arts",
   ],
 } as const;
 
