@@ -86,7 +86,7 @@ export default function AcademicsPage() {
       {/* Levels */}
       <section className="bg-cream-100 py-20">
         <div className="container-x">
-          <SectionHeading eyebrow="Levels" title="From first steps to Primary 6" />
+          <SectionHeading eyebrow="Levels" title="From First Steps through JHS 1" />
           <div className="grid gap-6 md:grid-cols-3">
             {programmes.map((p, i) => (
               <Reveal key={p.title} delay={i * 100}>
